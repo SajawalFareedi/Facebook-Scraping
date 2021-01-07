@@ -32,14 +32,14 @@ driver.get(url)
 
 driver.implicitly_wait(10)
 
-email = '03244307348'
+email = 'Your Email'
 email_xpath = """//*[@id="email"]"""
 find_email_element = driver.find_element_by_xpath(email_xpath)
 find_email_element.send_keys(email)
 
 driver.implicitly_wait(10)
 
-password = '6789qwerty'
+password = 'Your Password'
 password_xpath = """//*[@id="pass"]"""
 find_password_element = driver.find_element_by_xpath(password_xpath)
 find_password_element.send_keys(password)
@@ -47,7 +47,7 @@ find_password_element.send_keys(Keys.ENTER)
 
 sleep(6)
 
-group_url = 'https://www.facebook.com/groups/playstoreappofficial/members'
+group_url = "https://www.facebook.com/groups/group-name/members"
 driver.get(group_url)
 
 driver.implicitly_wait(10)
